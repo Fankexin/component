@@ -99,6 +99,7 @@ var option = {
     },
     tooltip: {
         show: true,
+        trigger : 'axis',
         axisPointer: {
             type: 'line',
             lineStyle: {
@@ -106,7 +107,8 @@ var option = {
                 width: 1,
                 type: 'solid'
             },
-        }
+        },
+        formatter: '<div style="text-align:center;">{a}<br/>{b}: {c}</div>'
     },
     xAxis: {
         data: [2000, 2005, 2010, 2015, 2020],
